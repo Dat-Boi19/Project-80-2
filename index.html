@@ -1,0 +1,40 @@
+<head>
+    <title>Making Paragraphs</title>
+</head>
+<body>
+    <span>1.</span>
+    <input type="text" id="input_box_1" placeholder="Input Box 1">
+    <br><br>
+    <span>2.</span>
+    <input type="text" id="input_box_2" placeholder="Input Box 2">
+    <br><br>
+    <span>3.</span>
+    <input type="text" id="input_box_3" placeholder="Input Box 3">
+    <br><br>
+    <span>4.</span>
+    <input type="text" id="input_box_4" placeholder="Input Box 4">
+    <br><br>
+    <span>5.</span>
+    <input type="text" id="input_box_5" placeholder="Input Box 5">
+    <br><br>
+    <span>6.</span>
+    <input type="text" id="input_box_6" placeholder="Input Box 6">
+    <br><br>
+    <button id="click" onclick="click()" style="height: 50px; width: 100px;"></button>
+    <div id="show_result">
+
+    </div>
+</body>
+<script>
+var all_Stored = "";
+function click(){
+for(i = 0; i <=6; i++){
+var push = "";
+document.getElementById(push).innerHTML = "input_box_" + i;
+console.log(push);
+all_Stored.push( ". " + push)
+console.log(all_Stored)
+document.getElementById("show_result").innerHTML = all_Stored
+}
+}
+</script>
